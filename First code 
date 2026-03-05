@@ -1,0 +1,67 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMLDagQ4KR5/EYl31+c6L8v",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/ValkryreMalachie/Centralized-repository-shipping_calculations/blob/main/First%20code%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "students = []\n",
+        "\n",
+        "while True: # Capital T!\n",
+        "    name = await input(\"Enter name: \")\n",
+        "    age = await input(\"Enter age: \")\n",
+        "    grade = await input(\"Enter grade: \")\n",
+        "\n",
+        "    student_info = {\n",
+        "        \"name\": name,\n",
+        "        \"age\": age,\n",
+        "        \"grade\": grade\n",
+        "    }\n",
+        "\n",
+        "    # (Ghost brace deleted)\n",
+        "\n",
+        "    students.append(student_info)\n",
+        "    print(f\"Added {name} to the list!\") # Added 'f' and fixed quotes\n",
+        "\n",
+        "    cont = await input(\"Add another student? (yes/no): \")\n",
+        "    if cont.lower() == \"no\":\n",
+        "        break\n",
+        "\n",
+        "print(\"\\nFinal Student List:\")\n",
+        "print(students)\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "lkJSert6r9as"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
